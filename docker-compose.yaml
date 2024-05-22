@@ -3,6 +3,4 @@ version: '3.8'
 services:
   cartpole-evaluation:
     build: .
-    ports:
-      - "8000:8000"
     command: ["uvicorn", "main:app", "--host=0.0.0.0", "--reload"]
